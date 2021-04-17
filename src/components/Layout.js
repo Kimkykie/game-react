@@ -8,7 +8,7 @@ export default function Layout() {
   const { name } = token_data;
   const logoutUser = (e) => {
     localStorage.removeItem("token");
-    window.location.href= '/login'
+    window.location.reload();
   };
   return (
     <div className="flex justify-between bg-gray-300">
